@@ -1,0 +1,25 @@
+#pragma once
+#include<stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
+#include<assert.h>
+
+typedef struct {
+	int x;
+	int y;
+}STDataType;
+
+typedef struct STNode
+{
+	STDataType* a;
+	int top;
+	int capacity;
+}ST;
+
+void STInit(ST* pst);
+void STDestory(ST* pst);
+void STPush(ST* pst, STDataType x);
+void STPop(ST* pst);
+STDataType STTop(ST* pst);
+bool STEmpty(ST* pst);
+int STSize(ST* pst);
