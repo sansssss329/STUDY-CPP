@@ -1,0 +1,8 @@
+﻿  snake.c
+  test.c
+D:\VS\贪吃蛇\snake.c(32,36): warning C4244: “函数”: 从“DWORD”转换到“WORD”，可能丢失数据
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 22 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  贪吃蛇.vcxproj -> D:\VS\贪吃蛇\x64\Release\贪吃蛇.exe

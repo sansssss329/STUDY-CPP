@@ -1,0 +1,5 @@
+﻿  snake.c
+D:\VS\贪吃蛇\snake.c(32,36): warning C4244: “函数”: 从“DWORD”转换到“WORD”，可能丢失数据
+  test.c
+  正在生成代码...
+  贪吃蛇.vcxproj -> D:\VS\贪吃蛇\x64\Debug\贪吃蛇.exe
