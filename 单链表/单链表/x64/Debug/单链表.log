@@ -1,0 +1,5 @@
+﻿  test.c
+D:\VS\单链表\SList.h(32,9): warning C4047: “return”:“SLnode *”与“int”的间接级别不同
+  (编译源文件“test.c”)
+  
+  单链表.vcxproj -> D:\VS\单链表\x64\Debug\单链表.exe
