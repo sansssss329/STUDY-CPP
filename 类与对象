@@ -1,0 +1,80 @@
+#include<iostream>
+using namespace std;
+
+
+class Stack {
+public:
+	Stack(int x = 0) {
+		int* tmp = (int*)malloc(sizeof(int) * 4);
+		if (!tmp) {
+			perror("Stack::malloc fail");
+			exit(1);
+		}
+		a = tmp;
+		top = 0;
+		capacity = 4;
+	}
+
+	void Print() {
+		for (int i = 0; i < top; i++) {
+			cout << a[i] << ' ';
+		}
+		cout << endl;
+	}
+
+	void Push(int x) {
+		if (top == capacity) {
+			int* tmp = (int*)realloc(a, sizeof(int) * 2 * capacity);
+			if (!tmp) {
+				perror("Stack::malloc fail");
+				exit(1);
+			}
+			a = tmp;
+			capacity *= 2;
+		}
+		a[top++] = x;
+	}
+
+	void Pop() {
+		if (!top) return;
+		top--;
+	}
+
+	bool Empty() {
+		return top == 0;
+	}
+
+
+private:
+	int* a;
+	int top;
+	int capacity;
+};
+
+class Myqueue {
+public:
+
+private:
+	Stack in;
+	Stack out;
+	int size;
+};
+
+
+
+int main() {
+	//Stack s(0);
+	//s.Push(1);
+	//s.Push(2);
+	//s.Push(3);
+	//s.Push(4);
+	//s.Push(5);
+	//s.Push(6);
+	//s.Push(7);
+	//s.Push(8);
+	//s.Push(9);
+	//s.Print();
+
+
+	return 0;
+}
