@@ -1,0 +1,7 @@
+﻿  Queue.h
+  Queue.c
+  Stack.c
+  test.c
+  正在生成代码...
+栈与队列\x64\Debug\Queue.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  栈与队列.vcxproj -> D:\VS\栈与队列\x64\Debug\栈与队列.exe
